@@ -35,4 +35,57 @@ git rev-parse <ref> # Get the SHA-1 hash of a reference
 git fsck # Verify the integrity of the repository
 git gc # Clean up unnecessary files and optimize the repository
 
-``` 
+```
+## Remote Repositories
+
+```bash 
+git remote add origin <url> # Connect local repo to remote
+git push -u origin <branch> # Push changes to remote branch
+git pull # Pull changes from remote repo
+git clone <url> # Clone a remote repository
+git remote -v # List remote connections
+git remote rm <remote> # Remove a remote connection
+git fetch # Fetch updates from remote repo without merging
+git remote show <remote> # Show details about a remote repository
+git remote rename <old-name> <new-name> # Rename a remote repository
+git push --tags # Push all tags to remote repository
+git push --force # Force-push changes to the remote repository
+git push origin --delete <branch> # Delete a remote branch
+git pull --rebase # Pull and rebase the current branch
+git fetch --all # Fetch updates from all remote repositories
+git remote update # Update remote-tracking branches
+
+```
+
+
+## branch commands 
+```bash
+git branch #to see all branch
+git branch feature-1  # for creating another branch
+git switch feature-1  # move to anothere branch
+git switch -c feature-2 
+git switch main
+git branch -d feature-2
+
+git remote -v
+git remote add origin <url>
+
+git push -u origin main
+git push -u origin feature-1
+
+git fetch
+git pull
+
+git clone <url>
+
+git remote add upstream <url>
+git fetch upstream
+git merge upstream/main
+
+```
+
+
+
+
+
+
