@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 This is the line edited by the MAIN branch.
+=======
+This is the line edited by the FEATURE branch.
+>>>>>>> conflict-branch
