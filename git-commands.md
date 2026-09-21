@@ -87,7 +87,10 @@ git merge upstream/main
 ``` bash
 git merge < branch name >
 
+git switch main
+git switch <branch name>
 
+git 
 ```
 
 
