@@ -90,7 +90,18 @@ git merge < branch name >
 git switch main
 git switch <branch name>
 
-git 
+git rebase main
+
+git log --oneline
+
+git log --oneline --graph --all
+
+git cherrpick < commit ID> ## eg. e4f5g6h
+
+git stash apply
+
+git stash pop
+
 ```
 
 
