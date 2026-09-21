@@ -83,7 +83,12 @@ git fetch upstream
 git merge upstream/main
 
 ```
+## Advanced Git: Merge, Rebase, Stash & Cherry Pick
+``` bash
+git merge < branch name >
 
+
+```
 
 
 
