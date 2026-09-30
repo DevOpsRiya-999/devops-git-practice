@@ -56,44 +56,39 @@ git fetch --all # Fetch updates from all remote repositories
 git remote update # Update remote-tracking branches
 
 ```
-
-
-## branch commands 
+## Branching & Merging
 ```bash
-git branch #to see all branch
-git branch feature-1  # for creating another branch
-git switch feature-1  # move to anothere branch
-git switch -c feature-2 
-git switch main
-git branch -d feature-2
+git checkout <branch>
+git branch
+git switch <branch>
+git checkout -b <branch> # Create and switch to a new branch
+git merge <branch> # Merge a branch into the current branch
+git branch -d <branch> # Delete a branch
+git branch -r # List remote branches
+git branch -a # List local and remote branches
+git branch -u <upstream-branch> # Set upstream branch for the current branch
+git branch -m <old-name> <new-name> # Rename a branch
+git branch --merged # List branches that have been merged into the current branch
+git branch --no-merged # List branches that have not been merged into the current branch
+git merge --abort # Abort an ongoing merge operation
+git merge --squash <branch> # Squash the commits from a branch into a single commit
+git merge --no-ff <branch> # Merge with a merge commit even if it's a fast-forward merge
+git log --online featcher.
 
-git remote -v
-git remote add origin <url>
 
-git push -u origin main
-git push -u origin feature-1
+## Git Reset vs Revert & Branching Strategies
 
-git fetch
-git pull
+```bash
+git reset --soft HEAD~1
+git reset --mixed HEAD~1
+git reset --hard HEAD~1
 
-git clone <url>
+git log --oneline  # to get all commit id's and commits
 
-git remote add upstream <url>
-git fetch upstream
-git merge upstream/main
+git revert " commit ID"
+
+git reflog  # undo or revert the mistakly happened reset
+
 
 ```
-## Advanced Git: Merge, Rebase, Stash & Cherry Pick
-``` bash
-git merge < branch name >
-
-git switch main
-git switch <branch name>
-
-git 
-```
-
-
-
-
 
