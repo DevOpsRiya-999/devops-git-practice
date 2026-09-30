@@ -91,4 +91,31 @@ git reflog  # undo or revert the mistakly happened reset
 
 
 ```
+<<<<<<< HEAD
+=======
+## Advanced Git: Merge, Rebase, Stash & Cherry Pick
+``` bash
+git merge < branch name >
+
+git switch main
+git switch <branch name>
+
+git rebase main
+
+git log --oneline
+
+git log --oneline --graph --all
+
+git cherrpick < commit ID> ## eg. e4f5g6h
+
+git stash apply
+
+git stash pop
+
+```
+
+
+
+
+>>>>>>> 2899a133de2e05cc6f79efbcde136be971d440d3
 
